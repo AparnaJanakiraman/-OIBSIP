@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html, body{
+  font-family: 'Bebas Neue', cursive,sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+img{
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+
+
+.container{
+  min-height: 100vh;
+  padding-bottom: 50px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+#navbar{
+   
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right:25px;
+  font-weight: bold;
+  display:flex;
+  justify-content:flex-start;
+   
+  }
+
+
+.navbar-list{
+  display:flex-start;
+}
+
+.navbar-list a {
+  display: block;
+  font-size:20px;
+  
+}
+
+.navbar-list a:hover{
+  background-color:grey;
+  
+}
+
+
+#navbar ul{
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  background-color:black;
+  width: 100%;
+  
+}
+
+#navbar li{
+  float: left;
+}
+
+#navbar li a{
+  text-align: center;
+  text-decoration: none;
+  color:  white;
+  font-style: bold;
+  padding: 3vh 20vh;
+  display: block;
+  
+}
+
+.Introduction{
+  background-image:url("https://images.unsplash.com/photo-1578589335615-9e804277a5af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGxhcHRvcCUyMGFuZCUyMGNvZmZlZXxlbnwwfHwwfHw%3D&w=1000&q=80");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  display:flex;
+}
+
+#welcome-section{
+  height:100vh;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+#welcome-section h1{
+  text-transform:uppercase;
+  color:#e6d7d5;
+  display:block;
+  text-align:center;
+  margin-bottom:-5px;
+  margin-top:-120px;
+  font-weight:bolder;
+  font-size:55px;
+  opacity:8;
+  
+}
+
+#welcome-section p{
+  color:#d9c7c5;
+  font-size:30px;
+  font-weight:bolder;
+  text-transform:Algerian;
+  text-align:center;
+  display:block;
+}
+
+img{
+  display:block;
+  width:100%;
+  height:100%;
+  
+}
+
+.work{
+  background-color:black;
+  color:white;
+  font-weight:bold;
+  text-align:center;
+  display:block;
+  width:100%;
+  margin:0 auto;
+  min-height:1000px;
+}
+.work .work-header{
+  color:white;
+  text-align:center;
+  max-width:620px;
+  font-size:30px;
+  display:block;
+  margin:25px auto;
+  
+}
+
+.project{
+  display:inline-block;
+  float:left;
+  text-decoration: none;
+  border: none;
+  height: 337px;
+  width: 337px;
+  margin: 35px 35px ;
+  align-content:center;
+  
+  
+}
+
+.project-title{
+  font-weight: bold;
+  color:white;
+  font-size:25px;
+  padding:10px;
+  background-color:black;
+}
+.project-picture{
+  
+  margin-top:auto;
+  margin-bottom:auto;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width:  330px;
+  height: 300px;
+  
+  display: inline-block;
+  float:left;
+  
+   
+  
+ 
+ 
+}
+
+.project-tile{
+  font-weight: bold;
+  color: black;
+}
+
+.show-all{
+  
+  
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px;
+  background-color: black;
+  cursor: pointer;
+  margin: 15px 15px;
+  align-items: center;
+  margin-top:10px;
+  margin-left:-1250px;
+  margin-bottom:auto;
+}
+.contact-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 180vh;
+  
+  background:black;
+  
+}
+.contact-header h1{
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  display: block;
+  margin-top: -490px;
+  font-size:50px;
+  padding: 70px;
+  
+}
+
+.contact-point{
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: bold;
+  align-content: center;
+  color:whitesmoke;
+  
+  
+  text-align: center;
+  
+  cursor: pointer;
+  justify-content:center;
+  align-items: center;
+  width: 40px;
+  height: 100px;
+  line-height: 100px;
+  position: center;
+  float: left;
+  margin: 20px 45px 0px 20px;
+  
+  
+}
+.profile-link {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: -390px;
+  flex-wrap: wrap;
+  font-size:50px;
+  
+}
+
+@media only screen and (max-width: 500px) {
+  nav ul {
+    text-align: center;
+    
+  }
+  .contact-header h1{
+    font-size:25px;
+  }
+  #navbar {
+    width:50%;
+    display:flex;
+    
+  }
+
+}
+
+footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ padding: 25px;
+ height: 250px;
+ margin-top:115px;
+ background-color:black;
+ color: white;
+ 
+}
+footer a{
+  color: white;
+}
